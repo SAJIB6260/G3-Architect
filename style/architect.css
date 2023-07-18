@@ -82,11 +82,46 @@ ul li a{
     }
 }
    /* tablet or medium devices */
-   @media screen and (min-width: 576px) and (max-width:992px){
+@media screen and (min-width: 576px) and (max-width:992px){
     header{
         padding: 50px;
     }
     nav {
         flex-direction: column;
     }
-   }
+}
+
+/* main style  */
+main{
+    width: 1440px;
+    margin: 0px auto;
+}
+   /* teams style */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-container-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.teams-content-title{
+    font-size: 2.8rem;
+}
+.teams-content-title .quick{
+    color: #727272;
+    font-weight: 500;
+}
+.teams-content-title .our{
+    color:  #131313;
+    font-weight: 700;
+}
+.teams-content-title .text-feature{
+    color: #FF900E;
+    font-weight: 700;
+}
