@@ -2,11 +2,22 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;700;800&display=swap');
 
+ /* share style */
 
 *   {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
     /* margin: 0px; */
+}
+.btn-primary{
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background: #FF900E;
+    border: none;
+    padding: 20px 25px;
+    cursor: pointer;    /*  pointer hand er moto kaj kore  */
 }
 
 /* header style  */
@@ -54,3 +65,28 @@ ul li a{
 .banner-description{
     color: #727272;
 }
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+   /* responsive style  */
+    /* mobile devices */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+   /* tablet or medium devices */
+   @media screen and (min-width: 576px) and (max-width:992px){
+    header{
+        padding: 50px;
+    }
+    nav {
+        flex-direction: column;
+    }
+   }
